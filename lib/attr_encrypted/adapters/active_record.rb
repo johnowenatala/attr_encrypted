@@ -4,7 +4,7 @@ if defined?(ActiveRecord::Base)
   module AttrEncrypted
     module Adapters
       module ActiveRecord
-        RAILS_VERSION = Gem::Version.new(::ActiveRecord::VERSION::STRING).freeze
+        RAILS_VERSION = Gem::Version.new(::ActiveRecord::VERSION::STRING)
 
         def self.extended(base) # :nodoc:
           base.class_eval do
